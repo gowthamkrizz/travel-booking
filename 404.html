@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>404 - Coastal Sanctuary Not Found | Stackly Seaside Resort</title>
+  <meta name="description" content="The coastal chalet or resort page you are looking for has drifted beyond the horizon. Return to Stackly Seaside Resort." />
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/webp" href="assets/images/stackly-logo-white.webp" />
+
+  <!-- Google Fonts: Playfair Display & Raleway -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <style>
+    /* ==========================================================================
+       404 ERROR PAGE STYLES - STACKLY LUXURY SEASIDE RESORT
+       ========================================================================== */
+    :root {
+      --color-primary: #1e241e;
+      --color-dark-bg: #0d120e;
+      --color-dark-card: #151c16;
+      --color-terracotta: #c86d56;
+      --color-terracotta-glow: rgba(200, 109, 86, 0.45);
+      --color-terracotta-hover: #b45a43;
+      --color-sand: #e6e0d5;
+      --color-sand-light: #f5f2eb;
+      --color-text-light: #fcfbf8;
+      --color-text-muted: #959c94;
+      --font-serif: 'Playfair Display', Georgia, serif;
+      --font-sans: 'Raleway', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      --passepartout-size: 24px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: var(--font-sans);
+      background-color: #080b08;
+      color: var(--color-text-light);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      overflow-x: hidden;
+      padding: var(--passepartout-size);
+    }
+
+    /* Signature Chalet Passepartout Outer Frame */
+    .error-frame {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      background-color: var(--color-dark-bg);
+      background-image: 
+        radial-gradient(circle at 50% 38%, rgba(200, 109, 86, 0.22) 0%, rgba(200, 109, 86, 0.05) 45%, transparent 70%),
+        repeating-linear-gradient(90deg, rgba(255, 255, 255, 0.015) 0px, rgba(255, 255, 255, 0.015) 1px, transparent 1px, transparent 60px);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* Ambient Decorative Glow Lights */
+    .error-frame::before {
+      content: '';
+      position: absolute;
+      top: -150px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 600px;
+      height: 600px;
+      background: radial-gradient(circle, rgba(200, 109, 86, 0.18) 0%, transparent 65%);
+      pointer-events: none;
+      z-index: 1;
+    }
+
+    /* Header with Brand Logo */
+    .error-header {
+      width: 100%;
+      padding: 32px 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      z-index: 10;
+    }
+
+    .error-logo {
+      display: inline-flex;
+      align-items: center;
+      text-decoration: none;
+      transition: opacity 0.25s ease, transform 0.25s ease;
+    }
+
+    .error-logo:hover {
+      opacity: 0.9;
+      transform: scale(1.02);
+    }
+
+    .error-logo img {
+      height: 38px;
+      width: auto;
+      object-fit: contain;
+    }
+
+    /* Main Error Content Layout */
+    .error-main {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 20px 24px 60px;
+      text-align: center;
+      position: relative;
+      z-index: 10;
+      max-width: 980px;
+      margin: 0 auto;
+      width: 100%;
+    }
+
+    /* Badge Pill */
+    .error-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 8px 24px;
+      border-radius: 50px;
+      background: rgba(200, 109, 86, 0.12);
+      border: 1px solid rgba(200, 109, 86, 0.4);
+      box-shadow: 0 0 20px rgba(200, 109, 86, 0.15);
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--color-terracotta);
+      margin-bottom: 24px;
+      animation: badgePulse 3s infinite ease-in-out;
+    }
+
+    .error-badge-dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background-color: var(--color-terracotta);
+      box-shadow: 0 0 8px var(--color-terracotta);
+    }
+
+    @keyframes badgePulse {
+      0%, 100% {
+        box-shadow: 0 0 20px rgba(200, 109, 86, 0.15);
+        border-color: rgba(200, 109, 86, 0.4);
+      }
+      50% {
+        box-shadow: 0 0 30px rgba(200, 109, 86, 0.35);
+        border-color: rgba(200, 109, 86, 0.7);
+      }
+    }
+
+    /* Giant 404 Visual Display */
+    .error-number-visual {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      margin-bottom: 24px;
+      user-select: none;
+    }
+
+    .error-digit {
+      font-family: var(--font-serif);
+      font-size: clamp(6.5rem, 16vw, 13rem);
+      font-weight: 700;
+      line-height: 0.9;
+      color: #ffffff;
+      text-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+    }
+
+    .error-digit-accent {
+      background: linear-gradient(135deg, #ffffff 30%, var(--color-terracotta) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    /* Stylized Center "0" with Seaside Ring and Icon */
+    .error-center-circle {
+      position: relative;
+      width: clamp(100px, 15vw, 175px);
+      height: clamp(100px, 15vw, 175px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 8px;
+    }
+
+    .error-dashed-ring {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      border: 3.5px dashed var(--color-terracotta);
+      box-shadow: 
+        0 0 35px var(--color-terracotta-glow),
+        inset 0 0 25px rgba(200, 109, 86, 0.15);
+      animation: rotateRing 30s linear infinite;
+    }
+
+    @keyframes rotateRing {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    .error-center-emblem {
+      position: relative;
+      z-index: 2;
+      width: 60%;
+      height: 60%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--color-terracotta);
+      filter: drop-shadow(0 0 12px var(--color-terracotta));
+      animation: pulseEmblem 3s ease-in-out infinite;
+    }
+
+    .error-center-emblem svg {
+      width: 100%;
+      height: 100%;
+      fill: currentColor;
+    }
+
+    @keyframes pulseEmblem {
+      0%, 100% {
+        transform: scale(1);
+        filter: drop-shadow(0 0 10px rgba(200, 109, 86, 0.6));
+      }
+      50% {
+        transform: scale(1.08);
+        filter: drop-shadow(0 0 22px rgba(200, 109, 86, 0.9));
+      }
+    }
+
+    /* Headings & Descriptions */
+    .error-title {
+      font-family: var(--font-serif);
+      font-size: clamp(1.8rem, 4.2vw, 3.2rem);
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: #ffffff;
+      margin-bottom: 20px;
+      line-height: 1.2;
+      text-shadow: 0 2px 20px rgba(0, 0, 0, 0.4);
+    }
+
+    .error-description {
+      font-size: clamp(0.95rem, 1.4vw, 1.1rem);
+      line-height: 1.75;
+      color: var(--color-text-muted);
+      max-width: 680px;
+      margin: 0 auto 42px;
+      font-weight: 400;
+    }
+
+    /* Action Buttons Container (Matching Layout of the Reference Image) */
+    .error-actions {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 16px;
+      flex-wrap: wrap;
+      width: 100%;
+    }
+
+    /* Base Action Button Style */
+    .error-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 14px;
+      padding: 8px 10px 8px 24px;
+      border-radius: 50px;
+      font-family: var(--font-sans);
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      text-decoration: none;
+      cursor: pointer;
+      transition: all 0.3s cubic-bezier(0.2, 0, 0, 1);
+      border: 1px solid transparent;
+      outline: none;
+    }
+
+    .error-btn-badge {
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: transform 0.3s ease, background-color 0.3s ease;
+      flex-shrink: 0;
+    }
+
+    .error-btn-badge svg {
+      width: 16px;
+      height: 16px;
+    }
+
+    /* Primary Terracotta Home Button (Like the bright green pill in reference) */
+    .error-btn-primary {
+      background-color: var(--color-terracotta);
+      color: #ffffff;
+      box-shadow: 0 8px 28px rgba(200, 109, 86, 0.4);
+    }
+
+    .error-btn-primary .error-btn-badge {
+      background-color: #ffffff;
+      color: var(--color-primary);
+    }
+
+    .error-btn-primary:hover {
+      background-color: var(--color-terracotta-hover);
+      transform: translateY(-3px);
+      box-shadow: 0 12px 34px rgba(200, 109, 86, 0.55);
+    }
+
+    .error-btn-primary:hover .error-btn-badge {
+      transform: scale(1.1);
+    }
+
+    /* Secondary Dark Action Buttons (Like the dark pill buttons in reference) */
+    .error-btn-secondary {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      color: #ffffff;
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+    }
+
+    .error-btn-secondary .error-btn-badge {
+      background-color: var(--color-terracotta);
+      color: #ffffff;
+    }
+
+    .error-btn-secondary:hover {
+      background: rgba(255, 255, 255, 0.12);
+      border-color: var(--color-terracotta);
+      transform: translateY(-3px);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+    }
+
+    .error-btn-secondary:hover .error-btn-badge {
+      transform: scale(1.1);
+      background-color: var(--color-terracotta-hover);
+    }
+
+    /* Responsive Adjustments */
+    @media (max-width: 1024px) {
+      :root {
+        --passepartout-size: 16px;
+      }
+      .error-header {
+        padding: 24px 20px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      :root {
+        --passepartout-size: 10px;
+      }
+      .error-frame {
+        border-radius: 0;
+      }
+      .error-header {
+        padding: 20px;
+      }
+      .error-logo img {
+        height: 32px;
+      }
+      .error-badge {
+        font-size: 9.5px;
+        padding: 6px 18px;
+        letter-spacing: 0.16em;
+      }
+      .error-number-visual {
+        gap: 6px;
+      }
+      .error-actions {
+        flex-direction: column;
+        align-items: stretch;
+        max-width: 320px;
+        margin: 0 auto;
+      }
+      .error-btn {
+        justify-content: space-between;
+        padding: 8px 12px 8px 20px;
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Outer Frame -->
+  <div class="error-frame">
+    
+    <!-- Header with Stackly Luxury Logo -->
+    <header class="error-header">
+      <a href="index.html" class="error-logo" aria-label="Stackly Seaside Resort Home">
+        <img src="assets/images/stackly-logo-white.webp" alt="Stackly Seaside Resort" />
+      </a>
+    </header>
+
+    <!-- Main 404 Hero Section -->
+    <main class="error-main" role="main">
+      
+      <!-- Status Badge Pill -->
+      <div class="error-badge">
+        <span class="error-badge-dot"></span>
+        <span>ERROR 404 &bull; COASTAL SANCTUARY NOT FOUND</span>
+      </div>
+
+      <!-- Prominent 404 Graphic (Matching Reference Image Composition) -->
+      <div class="error-number-visual" aria-label="Error 404">
+        <span class="error-digit">4</span>
+        
+        <!-- Center Stylized Dashed Ring with Glowing Seaside Resort Emblem -->
+        <div class="error-center-circle">
+          <div class="error-dashed-ring"></div>
+          <div class="error-center-emblem">
+            <!-- Luxury Sun Rising Over Ocean Waves Emblem -->
+            <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <!-- Radiant Sun Beams -->
+              <path d="M32 6V12M32 52V58M6 32H12M52 32H58M13.6 13.6L17.8 17.8M46.2 46.2L50.4 50.4M13.6 50.4L17.8 46.2M46.2 17.8L50.4 13.6" stroke="currentColor" stroke-width="2.8" stroke-linecap="round"/>
+              <!-- Sun Core -->
+              <circle cx="32" cy="32" r="10" stroke="currentColor" stroke-width="2.5" fill="none"/>
+              <!-- Ocean Waves -->
+              <path d="M16 41C20 38 24 44 28 41C32 38 36 44 40 41C44 38 48 44 52 41" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/>
+              <path d="M20 47C24 44 28 50 32 47C36 44 40 50 44 47" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/>
+            </svg>
+          </div>
+        </div>
+
+        <span class="error-digit error-digit-accent">4</span>
+      </div>
+
+      <!-- Error Title -->
+      <h1 class="error-title">COASTAL SANCTUARY NOT FOUND</h1>
+
+      <!-- Error Description Paragraph -->
+      <p class="error-description">
+        Looks like this coastal chalet or seaside sanctuary has drifted beyond the horizon. We couldn't find the romantic villa, oceanfront retreat, or resort page you were looking for. Let's guide you back to our serene shores where pristine turquoise waters await!
+      </p>
+
+      <!-- Action Buttons (Matching Primary & Secondary Layout in Image) -->
+      <nav class="error-actions" aria-label="404 recovery options">
+        
+        <!-- Primary Button: RETURN TO HOMEPAGE -->
+        <a href="index.html" class="error-btn error-btn-primary">
+          <span>Return To Homepage</span>
+          <span class="error-btn-badge" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+              <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/>
+            </svg>
+          </span>
+        </a>
+
+        <!-- Secondary Button: EXPLORE CHALETS -->
+        <a href="index.html#section-3" class="error-btn error-btn-secondary">
+          <span>Explore Chalets</span>
+          <span class="error-btn-badge" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"></circle>
+              <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon>
+            </svg>
+          </span>
+        </a>
+
+        <!-- Tertiary Button: GO BACK -->
+        <button type="button" class="error-btn error-btn-secondary" onclick="if(window.history.length > 1) { window.history.back(); } else { window.location.href='index.html'; }" aria-label="Go to previous page">
+          <span>Go Back</span>
+          <span class="error-btn-badge" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="19" y1="12" x2="5" y2="12"></line>
+              <polyline points="12 19 5 12 12 5"></polyline>
+            </svg>
+          </span>
+        </button>
+
+      </nav>
+
+    </main>
+
+  </div>
+
+</body>
+</html>
