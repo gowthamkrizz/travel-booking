@@ -214,9 +214,9 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   // ------------------------------------------------------------------------
-  // 7. Chalet Booking & View More & CTA Buttons -> Navigate to 404 Error Page
+  // 7. Chalet Booking & View More & CTA Buttons & Footer Contacts -> Navigate to 404 Error Page
   // ------------------------------------------------------------------------
-  const action404Buttons = document.querySelectorAll('.js-book-chalet, .room-chalet-btn, .seaside-btn, .nature-cta-actions a, .offer-action a, a[href="404.html"]');
+  const action404Buttons = document.querySelectorAll('.js-book-chalet, .room-chalet-btn, .seaside-btn, .nature-cta-actions a, .offer-action a, .footer-contact-link, a[href="404.html"]');
   action404Buttons.forEach(btn => {
     btn.addEventListener('click', (e) => {
       e.preventDefault();
